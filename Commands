@@ -1,0 +1,23 @@
+# Install GitHub CLI (gh)
+brew install gh
+
+# Login to GitHub CLI
+gh auth login
+
+# Initialize Git
+git init
+
+# Stage your file
+git add hello.py
+
+# Create your first commit
+git commit -m "Add hello world program"
+
+# Create the Repository on GitHub and make it public
+gh repo create hello-antigravity --public
+
+# Connect Your Local Folder to GitHub
+git remote add origin https://github.com/yosais/hello-antigravity.git
+
+# Push Your Code
+git push -u origin main
